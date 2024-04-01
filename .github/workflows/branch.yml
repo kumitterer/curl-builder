@@ -25,7 +25,7 @@ jobs:
         cd curl_temp
         git checkout -b $BRANCH_NAME
 
-        sed -i '/if(hostname_len >= 7 &&/,/return CURLRESOLV_ERROR;/d' lib/hostip.c
+        sed -i '/if(hostname_len >= 7 &&/,/};/d' lib/hostip.c
 
         git add .
         git commit -m "Apply fixes"
