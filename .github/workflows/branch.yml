@@ -31,5 +31,5 @@ jobs:
         git commit -m "Apply fixes"
         
         # Push to your repository
-        git remote set-url origin https://kumitterer:${{ secrets.PAT }}@github.com/kumitterer/curl-test.git
+        git remote set-url origin https://kumitterer:${{ secrets.PAT }}@github.com/kumitterer/curl-builder.git
         git push -u origin $BRANCH_NAME
